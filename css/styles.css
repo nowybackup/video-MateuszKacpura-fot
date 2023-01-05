@@ -316,7 +316,26 @@ footer p {
 	margin-right: auto;
 }
 
+a:link
+{
+   color: green;
+   text-decoration: none;
+}
 
+a:visited
+{
+   color: green;
+}
+
+a:hover
+{
+   color: blue;
+}
+
+a:active
+{
+   color: red;
+}
 
 
 
