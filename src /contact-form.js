@@ -25,15 +25,15 @@ const cfbody = `
 `;
 
 const cfform = `
-<h3 class="title">Contact</h3>
-<p>Send me a message I will contact with you soon.</p>
+<h3 class="title">Skontaktuj się ze mną</h3>
+<p>Wyślij wiadomość a odezwę się w krótce</p>
 <div>
-	<input class="element" onchange="cfonChange('cfname')" id="cfname" type="text" name="name" placeholder="Name" autocomplete="off">
+	<input class="element" onchange="cfonChange('cfname')" id="cfname" type="text" name="name" placeholder="Imię" autocomplete="off">
 	<input class="element" onchange="cfonChange('cfemail')" id="cfemail" type="text" name="email" placeholder="Email" autocomplete="off">
-	<input class="element" onchange="cfonChange('cfphone')" id="cfphone" type="number" name="phoneno" placeholder="Phone No" autocomplete="off">
-	<input class="element" onchange="cfonChange('cfsubject')" id="cfsubject" type="text" name="subject" placeholder="Subject" autocomplete="off">
-	<textarea class="element" onchange="cfonChange('cfmessage')" id="cfmessage" name="message" placeholder="Your message"></textarea>
-	<button id="cfbutton" onclick="cfSubmitMessage()" class="form-button color">Send your message</button><a href="https://github.com/cachecleanerjeet/Contact-Form" class="cfpromo">Powered by Contact Form</a>
+	<input class="element" onchange="cfonChange('cfphone')" id="cfphone" type="number" name="phoneno" placeholder="Telefon kontaktowy" autocomplete="off">
+	<input class="element" onchange="cfonChange('cfsubject')" id="cfsubject" type="text" name="subject" placeholder="Wyślij" autocomplete="off">
+	<textarea class="element" onchange="cfonChange('cfmessage')" id="cfmessage" name="message" placeholder="Twoja wiadomość"></textarea>
+	<button id="cfbutton" onclick="cfSubmitMessage()" class="form-button color">Wyślij tą wiadomość na mój telegram</button><a href="https://github.com/cachecleanerjeet/Contact-Form" class="cfpromo">Powered by Contact Form</a>
 </div>
 `;
 
