@@ -28,6 +28,35 @@ div.title-box {
     box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
 }
 
+div.title-box-menu {
+    background-color: black;
+    position: absolute;
+	top: 480px;
+	width: 850px;
+    z-index: 999; /*(posotionement box en ptiotié*/
+    padding: 10px;
+	opacity: 0.5;
+	box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);    text-align: center;
+}
+
+div.title-box-text-button {
+		opacity: 1;
+		display: flex;
+	align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+	    float:left;
+	  	width: 33%;
+		margin: 0 auto;    text-align: center;
+}
+
+p.box {
+	    text-align: center;
+		color: #ffffff;     margin-left: auto; font-family: Impact;
+        margin-right: auto;
+}
+
 header h1{
     font-size: 80px;
     text-align: center;
@@ -280,106 +309,6 @@ footer p {
   width: 40%;
 }
 
-.video-position {
-    width: calc(500px * 4);
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-	float:left
-}
-
-.carousel-item {
-  height: 100vh;
-  min-height: 300px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-.carousel-caption {
-  bottom: 270px;
-}
-
-.carousel-caption h5 {
-  font-size: 45px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin-top: 25px;
-}
-
-.carousel-caption p {
-  width: 75%;
-  margin: auto;
-  font-size: 18px;
-  line-height: 1.9;
-}
-
-.navbar-light .navbar-brand {
-  color: #fff;
-  font-size: 25px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
-  color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #fff;
-}
-
-.navbar-toggler {
-  background: #fff;
-}
-
-.navbar-nav {
-  text-align: center;
-}
-
-.nav-link {
-  padding: .2rem 1rem;
-}
-
-.nav-link.active,.nav-link:focus{
-  color: #fff;
-}
-
-.navbar-toggler {
-  padding: 1px 5px;
-  font-size: 18px;
-  line-height: 0.3;
-}
-
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #fff;
-}
-
-
-
-
-
-
-/* ignore the code below */
-
-
-.link-area
-{
-  position:fixed;
-  bottom:20px;
-  left:20px;  
-  padding:15px;
-  border-radius:40px;
-  background:tomato;
-}
-.link-area a
-{
-  text-decoration:none;
-  color:#fff;
-  font-size:25px;
-}
 
 
 
