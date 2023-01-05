@@ -1,0 +1,199 @@
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #a01313;
+    transition-duration: 1s;
+}
+
+#sidebar {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 35%;
+    height: 100vh;
+    text-align: right;
+    padding: 40px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    box-shadow: 1px 0px 5px black;
+	background-color: black;
+	color: aliceblue;
+
+}
+
+#sidebar img {
+    object-fit: contain;
+    width: 40%;
+}
+
+#icons {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.fa-brands {
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 3.3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#languages {
+    display: flex;
+    justify-content: space-around;
+    margin: 1px;
+    box-shadow: 0px 15px 5px black;
+    z-index: 800;
+	background-color: black;
+	color: aliceblue;
+}
+
+#mainbar {
+    width: 65%;
+    position: absolute;
+    right: 1px;
+    top: -1px;
+    max-height: 4000px;
+//	opacity: 1;
+}
+
+#top-banner {
+    height: 300px;
+    width: 100%;
+    background-color: black;
+	opacity: 1;
+    z-index: 0;
+}
+
+.content {
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.english {
+    display: none;
+}
+
+.spanish {
+    display: block;
+}
+
+.my-work-titles {
+    font-weight: bolder;
+}
+
+.my-work-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    border-bottom: 1px dashed grey;
+}
+
+.card-element {
+    width: 48%;
+    height: 200px;
+    margin-bottom: 45px;
+}
+
+.card-element h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.card-element p {
+    overflow: auto;
+    max-height: 145px;
+    text-align: justify;
+    padding-right: 5px;
+}
+
+#my-work iframe, #mi-trabajo iframe {
+    width: 100%;
+    height: 200px;
+}
+
+@media (max-width: 1000px) and (min-width: 200px) {
+    #sidebar img {
+        width: 90%;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .card-element {
+        width: 100%;
+    }
+}
+
+.slider {
+    overflow: hidden; 
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    //flex-direction: row;
+    width: calc(100px * 4);
+    height: 300px;
+	top: 100px;
+	opacity: 1;
+	position: relative;
+	z-index: 2;
+    animation: glisse 15s infinite ease;
+}
+
+.slide {
+    opacity: 1;/* transparence <1 */
+}
+
+@keyframes glisse{ /* pack pour lanimaiton */   
+
+    0% {
+        transform: translateX(0); /* x point de depart ou slider va commencer*/
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-500px);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0); /*revins au point de depart*/
+    }
+
+}
